@@ -1,0 +1,16 @@
+/tmp/slurmd/job1384514/slurm_script: line 9: cd: qb18517/11_DT/dynamicTextureMain/4_C3D_ConvolutionalNN_3D/: No such file or directory
+cuda:0
+Traceback (most recent call last):
+  File "2_C3D_Model_BC.py", line 118, in <module>
+    for vid, labels in mn_dataset_loader:  # This makes many itterations until finishes the whole data set which is really long about 6000 videos this menas the the whole system is really slow and we need to chagne something in the future
+  File "/mnt/storage/home/qb18517/qb18517/.conda/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 336, in __next__
+    return self._process_next_batch(batch)
+  File "/mnt/storage/home/qb18517/qb18517/.conda/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 357, in _process_next_batch
+    raise batch.exc_type(batch.exc_msg)
+NameError: Traceback (most recent call last):
+  File "/mnt/storage/home/qb18517/qb18517/.conda/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 106, in _worker_loop
+    samples = collate_fn([dataset[i] for i in batch_indices])
+  File "/mnt/storage/scratch/qb18517/11_DT/dynamicTextureMain/4_C3D_ConvolutionalNN_3D/my2_classes.py", line 85, in __getitem__
+    success, img = cap.read() # propablly problem with the success
+NameError: global name 'cap' is not defined
+

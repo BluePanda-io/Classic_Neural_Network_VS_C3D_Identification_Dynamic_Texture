@@ -1,0 +1,2 @@
+/tmp/slurmd/job1384957/slurm_script: line 9: cd: qb18517/11_DT/dynamicTextureMain/4_C3D_ConvolutionalNN_3D/: No such file or directory
+python: can't open file '2_C3D_Model_BC.py': [Errno 2] No such file or directory

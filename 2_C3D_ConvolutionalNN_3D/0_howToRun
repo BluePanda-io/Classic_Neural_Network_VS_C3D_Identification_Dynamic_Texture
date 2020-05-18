@@ -1,0 +1,5 @@
+How to Run
+
+source activate pytorch
+
+python 2_C3D_Model_BC.py

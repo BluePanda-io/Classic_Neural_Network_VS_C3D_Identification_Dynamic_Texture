@@ -1,0 +1,11 @@
+/tmp/slurmd/job1385374/slurm_script: line 9: cd: qb18517/11_DT/dynamicTextureMain/4_C3D_ConvolutionalNN_3D/: No such file or directory
+cuda:0
+Traceback (most recent call last):
+  File "2_C3D_Model_BC.py", line 111, in <module>
+    model.load_state_dict(torch.load("../../modelParameters/C3N_Model.pth"))
+  File "/mnt/storage/home/qb18517/qb18517/.conda/envs/pytorch/lib/python2.7/site-packages/torch/nn/modules/module.py", line 721, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for Net:
+	While copying the parameter named "fc1.bias", whose dimensions in the model are torch.Size([500]) and whose dimensions in the checkpoint are torch.Size([2000]).
+	While copying the parameter named "fc1.weight", whose dimensions in the model are torch.Size([500, 1400]) and whose dimensions in the checkpoint are torch.Size([2000, 2450]).
+	While copying the parameter named "fc2.weight", whose dimensions in the model are torch.Size([100, 500]) and whose dimensions in the checkpoint are torch.Size([100, 2000]).

@@ -1,0 +1,6 @@
+/tmp/slurmd/job1384508/slurm_script: line 9: cd: qb18517/11_DT/dynamicTextureMain/4_C3D_ConvolutionalNN_3D/: No such file or directory
+cuda:0
+Traceback (most recent call last):
+  File "2_C3D_Model_BC.py", line 102, in <module>
+    custom_mnist_from_csv = my_classes.customDatasetVideos('videoPath_labels.csv', frameStart=5, frames=15, startH=30, startW=30, heightVid=80, widthVid=100)
+NameError: name 'my_classes' is not defined
