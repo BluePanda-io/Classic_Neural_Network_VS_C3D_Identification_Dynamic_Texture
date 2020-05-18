@@ -10,8 +10,8 @@ Dynamic Texture is basically the texture that is created on a video from the dyn
 # Check Jupyter Notebook above
 
 ## Results of the Project 
-<img src="Images/lossOverTime.png" width="4120">
-<img src="Images/results.png" width="120">
+<img src="Images/lossOverTime.png" width="520">
+<img src="Images/results.png" width="520">
 
 ## Technology Used 
 1. PyTorch
